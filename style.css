@@ -1,0 +1,52 @@
+body {
+    display:grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    min-height: 100vh;
+}
+
+header {
+    grid-area: 1 / 1 / 2 / 13;
+}
+
+aside {
+    grid-area: 2 / 1 / 13 / 4;
+}
+
+main {
+    grid-area: 2 / 4 / 13 / 13;
+}
+
+.articles-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 30%;
+}
+h1, h2 {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0.5rem;
+}
+
+li {
+    padding-top: 0.5rem;
+}
+
+.image {
+    height:200px;
+    width: auto;
+    background-image: url(burger-stock-image.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.btn {
+    padding-block: 0.5rem;
+    width: 100%;
+}
